@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1646283369794
+Build-Jdk-Spec: 1.8
+Bundle-ManifestVersion: 2
+Bundle-Name: karaf-rest-example-api
+Bundle-SymbolicName: org.apache.karaf.rest-example-api
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: org.karaf.rest.example.api;version="0.0.1"
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.7))"
+Tool: Bnd-5.1.1.202006162103

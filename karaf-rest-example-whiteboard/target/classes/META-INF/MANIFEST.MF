@@ -1,0 +1,21 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1646283371298
+Build-Jdk-Spec: 1.8
+Bundle-ManifestVersion: 2
+Bundle-Name: karaf-rest-example-whiteboard
+Bundle-SymbolicName: org.apache.karaf.rest-example-whiteboard
+Bundle-Version: 0.0.1.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin 5.1.4
+Export-Package: org.karaf.rest.example.whiteboard;uses:="javax.ws.rs,org
+ .karaf.rest.example.api";version="0.0.1"
+Import-Package: javax.ws.rs;version="[2.1,3)",org.karaf.rest.example.api
+ ;version="[0.0,1)",org.karaf.rest.example.whiteboard
+Provide-Capability: osgi.service;objectClass:List<String>="org.karaf.res
+ t.example.whiteboard.BookingServiceRest";uses:="org.karaf.rest.example.
+ whiteboard"
+Require-Capability: osgi.extender;filter:="(&(osgi.extender=osgi.compone
+ nt)(version>=1.4.0)(!(version>=2.0.0)))",osgi.ee;filter:="(&(osgi.ee=Ja
+ vaSE)(version=1.7))"
+Service-Component: OSGI-INF/org.karaf.rest.example.whiteboard.BookingSer
+ viceRest.xml
+Tool: Bnd-5.1.1.202006162103
